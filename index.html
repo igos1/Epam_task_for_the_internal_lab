@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Пользователи</title>        
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+     </head>
+     <body>
+         <header>               
+            <div  id="head_cent">
+                <img id="header_icon" src="https://cdn2.iconfinder.com/data/icons/large-people-svg-icons/512/user_group-512.png"></img>               
+                <div id="searchinput">
+                        <input id="text_search" type="text" placeholder="Имя Фамилия"></input>  
+                        <button id="btn_search">Поиск</button>  
+                </div> 
+            </div>     
+         </header>         
+                <div class="select">
+                    <div>сортировка по фамилии:</div>
+                    <select id="sel" onchange="userSort()">     
+                        <option value="0">выбрать сортировку</option>                   
+                        <option value="1">По алфавиту</option>
+                        <option value="2">обратная сортировка</option>
+                    </select>                    
+                </div>                                 
+         <main >
+            <div id="modal">
+                <div id="modal_content">
+                    <span class="close" onclick="closeclick()">&times;</span>                    
+                    <img class="user_info_and_pict" id="modal_user_img"></img>
+                    <div class="user_info_and_pict" id="modal_user_info"></div>                  
+                </div>
+            </div>
+            <section id="main_users">                
+            </section>
+         </main>            
+               
+		 <script type = "text/javascript" src="scripts/main.js"></script>
+     </body>
+</html>     

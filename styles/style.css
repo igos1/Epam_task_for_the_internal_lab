@@ -1,0 +1,148 @@
+body{    
+    font-family:  Helvetica, sans-serif,Arial;  
+    background-color: rgb(182, 201, 201)
+}
+header{
+width: 100%;
+height: 110px;
+background: rgba(14, 68, 99, 0.8);
+text-align: center; 
+color:silver;
+box-shadow: -1px 15px 22px -8px #000000;
+padding: 1%;
+}
+
+.select{
+    border: 1px solid rgb(121, 119, 119);
+    width: 20%;
+    padding: 5px; 
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#head_cent{
+    display: inline-block;
+}
+#header_icon{  
+     
+    width: 15%;
+    height:15%;
+    right: 40%;    
+    padding: 3px;
+}
+#text_search{
+    margin: 2px;
+    width: 40%;
+}
+#sel{
+    margin: 5px;   
+    width: 90%;
+
+}
+#btn_search{
+    border-radius: 0 10px 10px 0;
+}
+#searchinput{  
+    border-radius: 15px;            
+    width: 100%;
+    bottom: 2px;
+}
+
+#main_users{
+    position: relative;        
+    margin: 10px;
+}
+.user{  
+    width: 180px;
+    height: 140px;
+    margin:5px ;
+   display: inline-block;     
+   border: 2px solid #ddd;     
+   align-items: center;
+   padding: 10px;
+   border-radius: 10px;
+   cursor: pointer;
+   background: rgba(14, 68, 99, 0.8);
+}
+.user_img{
+    width: 80%;
+    height: 70%;
+}
+
+.user:hover{
+    border-color: rgb(13, 2, 110);  
+    opacity: 0.8;
+ 
+}
+
+.user_name{
+    text-align: center;
+    margin: 3px;
+    color: azure;
+}
+#modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);  
+    
+}
+#modal_content{
+    position: relative;
+    margin: 10% auto;
+    padding: 15px;
+    border: 1px solid;
+    width: 45%;
+    background-color: azure;
+    border-radius: 10px;
+
+}
+.close{
+    float: right;
+    font-size: 30px;   
+    cursor: pointer;
+  
+}
+#modal_content img{   
+    width: 200px;
+    height: 200px;   
+    margin-right: 20px;
+
+}
+.user_info_and_pict{
+    display: inline-block; 
+}
+
+
+@media (max-width: 450px){
+    .user{
+        margin: auto;
+        display: block;
+        height: 100px;
+        width: 150px;
+    }
+    #sel{
+        width: 100px;
+    }
+    .select{
+        width: 120px;
+    }
+    #modal_content img{   
+        width: 90%;
+        margin: 10px;
+        height: 200px;     
+    }
+    #modal_content{
+        width: 90%;
+    }
+    #header_icon{  
+     
+        width: 70px;
+        height:60px;
+    }
+}
